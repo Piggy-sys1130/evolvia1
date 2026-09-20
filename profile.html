@@ -44,17 +44,17 @@
            <nav class="grid grid-cols-3 items-center px-8 py-4 border-b border-border">
                 <span class="font-bold text-lg">&lt;/&gt; Evolvia</span>
                 <div class="hidden md:flex justify-center gap-6 text-sm text-secondaryText">
-               <a href="dashboard.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Dashboard</a>
-                    <a href="practice.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Practice</a>
-                    <a href="friends.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Friends</a>
+               <a href="dashboard.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5">Dashboard</a>
+                    <a href="practice.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5">Practice</a>
+                    <a href="friends.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5">Friends</a>
                     <a href="profile.html" class="bg-primarybutton text-mainText text-sm font-medium px-4 py-2 rounded-full">Profile</a>
-                    <a href="badges.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Badges</a>
+                    <a href="badges.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-all duration-200 hover:-translate-y-0.5">Badges</a>
             </div>
         </div>
     <div class="flex items-center gap-3">
             <a href="about.html" class="text-sm text-secondaryText hover:text-mainText">About</a>
             <span class="text-sm text-secondaryText">Login</span>
-        <button class="bg-primarybutton hover :bg-buttonHover text-white text-sm font-medium px-4 py-2 rounded-lg">
+        <button class="bg-primarybutton hover:bg-buttonHover text-white text-sm font-medium px-4 py-2 rounded-full">
             Sign Up
     </button>
 </div>
@@ -69,7 +69,7 @@
         alt="Profile Picture"
         class="w-24 h-24 rounded-full object-cover border-4 border-card"/>
     </div>
-    <h1 class="text-xl font-bold">Amit</h1>
+    <h1 class="text-xl font-bold">Anurag</h1>
     <span class="mt-1 text-xs bg-primarybutton text-white px-3 py-1 rounded-full font-medium">
         Level 4
     </span>
@@ -93,10 +93,10 @@
 <!-- Right: tabs + content -->
  <section class="md:col-span-2 bg-card border border-border rounded-2xl p-6">
     <div class="flex flex-wrap gap-3 text-base border-b border-border pb-4 mb-6">
-        <span class="bg-bg text-mainText font-semibold px-5 py-3 rounded-full cursor-pointe transition-color">Overview</span>
-        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Activity</span>
-        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Badges</span>
-        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Friends</span>
+        <span class="bg-bg text-mainText font-semibold px-5 py-3 rounded-full cursor-pointe transition-all duartion-200 hover:-translate-y-0.5">Overview</span>
+        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-all duration-200 hover:-translate-y-0.5">Activity</span>
+        <a href="badges.html" class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-all duration-200 hover:-translate-y-0.5">Badges</a>
+        <a href="friends.html" class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-all duration-200 hover:-translate-y-0.5">Friends</a>
     </div>
 
         <h2 class="font-semibold mb-4">Recent Activity</h2>
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <h2 class="font-semibold mb-4">Your Badges</h2>
+        <h2 id="your-badges" class="font-semibold mb-4 scroll-mt-6">Your Badges</h2>
         <div class="flex gap-4">
             <div class="w-14 h-14 rounded-lg bg-badge1"></div>
             <div class="w-14 h-14 rounded-lg bg-badge2"></div>
