@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Friends - Evolvia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -13,6 +16,9 @@
                             bg: "#0a0e27",
                             card: "#141a35",
                             border: "#252c4a",
+                        },
+                         fontFamily: {
+                            sans: ["Poppins", "sans-serif"],
                         },
                     },
                 },
@@ -31,7 +37,6 @@
                     <a href="friends.html" class="text-white font-medium">Friends</a>
                     <a href="profile.html" class="hover:text-white">Profile</a>
                     <a href="badges.html" class="hover:text-white">Badges</a>
-                    <a href="about.html" class="text-white font-medium">About</a>
                 </div>
             </div>
             <div class="flex items-center gap-3">
@@ -60,17 +65,17 @@
             <div class="space-y-3">
 
                 <!--Friend row-->
-            <div class="flex items-center justify-between bg-card border border-border rounded-x1 px-5 py-4">
+           <div class="flex items-center justify-between bg-card border border-border rounded-xl px-5 py-4">
                 <div class="flex items-center gap-4">
-                <div class="relative">
-                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center font-bold">T</div>
-                    <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-orange-400 border-2 border-card"></span>
+                    <div class="=relative">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center font-bold">T</div>
+                        <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-green-400 border-2 border-card"></span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm">Triple_T</p>
+                        <p class="text-xs text-orange-400">Level 6 · 767 XP</p>
+                    </div>
                 </div>
-                <div>
-                <p class="font-semibold text-sm text-orange-400">Triple_T</p>
-                <p class="text-xs text-orange-400">Level 6 · 067 XP</p>
-            </div>
-            <div>
                 <button class="text-sm text-purple-400 hover:text-purple-300 font-medium">Message</button>
             </div>
 
@@ -108,7 +113,7 @@
         <div class="flex items-center justify-between bg-card border border-border rounded-xl px-5 py-4">
             <div class="flex items-center gap-4">
                 <div class="relative">
-                    <div= class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 tp-blue-500 flex items-center justify-center font-bold">A</div>
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center font-bold">A</div>
                     <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-green-400 border-2 border-card"></span>
                 </div>
                 <div>

@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width==device-width, initial-scale=1.0" />
         <title>About - Evolvia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -13,6 +16,9 @@
                             bg: "#0a0e27",
                             card: "#141a35",
                             border: "#252c4a",
+                        },
+                        fontFamily: {
+                            sans: ["Poppins", "sans-serif"],
                         },
                     },
                 },
@@ -29,8 +35,8 @@
                     <a href="dashboard.html" class="hover:text-white">Dashboard</a>
                     <a href="practice.html" class="hover:text-white">Practice</a>
                     <a href="friends.html" class="hover:text-white">Friends</a>
+                    <a href="profile.html" class="hover:text-white">Profile</a>
                     <a href="badges.html" class="hover:text-white">Badges</a>
-                    <a href="about.html" class="text-white">About</a>
             </div>
         </div>
         <div class="flex items-center gap-3">
@@ -70,8 +76,33 @@
         <div class="flex flex-wrap justify-center gap-6">
 
             <div class="bg-card border border-border rounded 2xl p-5 w-40">
-                <div class
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 mx-auto mb-3"></div>
+                <p class="font-semibold text-sm">Member 1</p>
+                <p class="text-xs text-gray-400">Backend</p>
             </div>
+
+            <div class="bg-card border border-border rounded-2xl p-5 w-40">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 mx-auto mb-3"></div>
+                <p class="font-semibold text-sm">Member2</p>
+                <p class="text-xs text-gray-400">Practice Logic</p>    
+            </div>
+
+            <div class="bg-card border border-border rounded-2xl p-5 w-40">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 mx-auto mb-3"></div>
+                <p class="font-semibold text-sm">Member 3</p>
+                <p class="text-xs text-gray-400">Dashboard</p>
+            </div>
+
+            <div class="bg-card border border-border rounded-2xl p-5 w-40">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-blue-500 mx-auto mb-3"></div>
+                <p class="font-semibold text-sm">Member 4</p>
+                <p class="text-xs text-gray-400">UI/UX + Profile + Friends</p>
+            </div>
+        
         </div>
-        </div>
+    
     </main>
+
+</body>
+</html>
+
