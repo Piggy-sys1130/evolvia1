@@ -30,6 +30,9 @@
                             badge3: "#849FA3",
                             badge4: "#41545A",
                     },
+                    fontFamily: {
+                            sans: ["Poppins", "sans-serif"],
+                        },
                 },
             },
         };
@@ -41,28 +44,30 @@
            <nav class="grid grid-cols-3 items-center px-8 py-4 border-b border-border">
                 <span class="font-bold text-lg">&lt;/&gt; Evolvia</span>
                 <div class="hidden md:flex justify-center gap-6 text-sm text-secondaryText">
-                    <a href="dashboard.html" class="hover:text-white">Dashboard</a>
-                    <a href="practice.html" class="hover:text-white">Practice</a>
-                    <a href="friends.html" class="hover:text-white">Friends</a>
-                    <a href="profile.html" class="text-white font-medium">Profile</a>
-                    <a href="badges.html" class="hover:text-white">Badges</a>
-                </div>
+               <a href="dashboard.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Dashboard</a>
+                    <a href="practice.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Practice</a>
+                    <a href="friends.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Friends</a>
+                    <a href="profile.html" class="bg-primarybutton text-mainText text-sm font-medium px-4 py-2 rounded-full">Profile</a>
+                    <a href="badges.html" class="text-secondaryText hover:bg-card hover:text-mainText px-4 py-2 rounded-full transition-colors">Badges</a>
             </div>
-           <div class="flex items-center gap-3">
-            <a href="about.html" class="text-sm text-secondaryText hover:text-white">About</a>
+        </div>
+    <div class="flex items-center gap-3">
+            <a href="about.html" class="text-sm text-secondaryText hover:text-mainText">About</a>
             <span class="text-sm text-secondaryText">Login</span>
-        <button class="bg-primarybutton hover:bg-buttonHover text-white text-sm font-medium px-4 py-2 rounded-lg">
+        <button class="bg-primarybutton hover :bg-buttonHover text-white text-sm font-medium px-4 py-2 rounded-lg">
             Sign Up
-        </button>
-    </div>
+    </button>
+</div>
 </nav>
 
 <main class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-    <!-- Left: profile card -->
+    <!-- profile pic -->
 <section class="bg-card border border-border rounded-2xl p-6 flex flex-col items-center text-center">
-    <div class="w-24 h-24 rounded-full bg-badge1 flex items-center justify-center text-3xl font-bold mb-4">
-        A
+    <img
+        src="profile_car.webp"
+        alt="Profile Picture"
+        class="w-24 h-24 rounded-full object-cover border-4 border-card"/>
     </div>
     <h1 class="text-xl font-bold">Amit</h1>
     <span class="mt-1 text-xs bg-primarybutton text-white px-3 py-1 rounded-full font-medium">
@@ -87,12 +92,12 @@
 
 <!-- Right: tabs + content -->
  <section class="md:col-span-2 bg-card border border-border rounded-2xl p-6">
-    <div class="flex gap-6 text-sm text-secondaryText border-b border-border pb-3 mb-6">
-        <span class="text-white font-medium border-b-2 border-purple-500 pb-3 mb-3">Overview</span>
-        <span class="hover:text-white cursor-pointer">Activity</span>
-        <span class="hover:text-white cursor-pointer">Badges</span>
-        <span class="hover:text-white cursor-pointer">Friends</span>
-        </div>
+    <div class="flex flex-wrap gap-3 text-base border-b border-border pb-4 mb-6">
+        <span class="bg-bg text-mainText font-semibold px-5 py-3 rounded-full cursor-pointe transition-color">Overview</span>
+        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Activity</span>
+        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Badges</span>
+        <span class="text-secondaryText hover:bg-bg hover:text-mainText px-5 py-3 rounded-full cursor-pointer transition-colors">Friends</span>
+    </div>
 
         <h2 class="font-semibold mb-4">Recent Activity</h2>
         <div class="space-y-3 mb-8">
@@ -123,6 +128,8 @@
         </section>
 
         </main>
+        <img src="doro.webp" class="fixed bottom-4 right-4 w-16 z-50 select-none pointer-events-none" alt="mascot" />
+    
     
     </body>
     </html>
