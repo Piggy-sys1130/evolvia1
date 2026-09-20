@@ -13,25 +13,34 @@
             theme: {
                 extend: {
                     colors: {
-                        bg: "#0a0e27",
-                        card: "#141a35",
-                        border: "#252c4a",
+                            bg: "#EDF3F0",
+                            card: "#DCE7E1",
+                            border: "#BFCFC6",
+                            navbar: "#E5EDEA",
+
+                            primarybutton: "#638874",
+                            buttonHover: "#709187",
+
+                            mainText: "#29383A",
+                            secondaryText: "#84999A",
+
+
+                            badge1: "#83AC91",
+                            badge2: "#99BDAE",
+                            badge3: "#849FA3",
+                            badge4: "#41545A",
                     },
-                     fontFamily: {
-                            sans: ["Poppins", "sans-serif"],
-                        },
                 },
             },
         };
     </script>
     </head>
-    <body class="bg-bg text-white min-h-screen">
+    <body class="bg-bg text-mainText min-h-screen">
 
           <!-- Top nav -->
-           <nav class="flex items-center justify-between px-8 py-4 border-b border-border">
-            <div class="flex items-center gap-8">
+           <nav class="grid grid-cols-3 items-center px-8 py-4 border-b border-border">
                 <span class="font-bold text-lg">&lt;/&gt; Evolvia</span>
-                <div class="hidden md:flex gap-6 text-sm text-gray-300">
+                <div class="hidden md:flex justify-center gap-6 text-sm text-secondaryText">
                     <a href="dashboard.html" class="hover:text-white">Dashboard</a>
                     <a href="practice.html" class="hover:text-white">Practice</a>
                     <a href="friends.html" class="hover:text-white">Friends</a>
@@ -40,9 +49,9 @@
                 </div>
             </div>
            <div class="flex items-center gap-3">
-            <a href="about.html" class="text-sm text-gray-300 hover:text-white">About</a>
-            <span class="text-sm text-gray-300">Login</span>
-        <button class="bg-gradient-to-r from-purple-500 to-blue-500 text-sm font-medium px-4 py-2 rounded-lg">
+            <a href="about.html" class="text-sm text-secondaryText hover:text-white">About</a>
+            <span class="text-sm text-secondaryText">Login</span>
+        <button class="bg-primarybutton hover:bg-buttonHover text-white text-sm font-medium px-4 py-2 rounded-lg">
             Sign Up
         </button>
     </div>
@@ -52,33 +61,33 @@
 
     <!-- Left: profile card -->
 <section class="bg-card border border-border rounded-2xl p-6 flex flex-col items-center text-center">
-    <div class="w-24 h-24 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-3xl font-bold mb-4">
+    <div class="w-24 h-24 rounded-full bg-badge1 flex items-center justify-center text-3xl font-bold mb-4">
         A
     </div>
     <h1 class="text-xl font-bold">Amit</h1>
-    <span class="mt-1 text-xs bg-gradient-to-r from-purple-500 to-blue-500 px-3 py-1 rounded-full font-medium">
+    <span class="mt-1 text-xs bg-primarybutton text-white px-3 py-1 rounded-full font-medium">
         Level 4
     </span>
 
     <div class="grid grid-cols-3 gap-4 mt-6 w-full">
     <div>
         <p class="text-lg font-bold">10</p>
-        <p class="text-xs text-gray-400">Friends</p>
+        <p class="text-xs text-secondaryText">Friends</p>
     </div>
     <div>
         <p class="text-lg font-bold">5</p>
-        <p class="text-xs text-gray-400">Badges</p>
+        <p class="text-xs text-secondaryText">Badges</p>
     </div>
     <div>
         <p class="text-lg font-bold">12</p>
-        <p class="text-xs text-gray-400">Day Streak</p>
+        <p class="text-xs text-secondaryText">Day Streak</p>
     </div>
 </div>
 </section>
 
 <!-- Right: tabs + content -->
  <section class="md:col-span-2 bg-card border border-border rounded-2xl p-6">
-    <div class="flex gap-6 text-sm text-gray-400 border-b border-border pb-3 mb-6">
+    <div class="flex gap-6 text-sm text-secondaryText border-b border-border pb-3 mb-6">
         <span class="text-white font-medium border-b-2 border-purple-500 pb-3 mb-3">Overview</span>
         <span class="hover:text-white cursor-pointer">Activity</span>
         <span class="hover:text-white cursor-pointer">Badges</span>
@@ -89,24 +98,24 @@
         <div class="space-y-3 mb-8">
             <div class="flex items-center justify-between bg-bg border border-border rounded-lg px-4 py-3">
                 <span class="text-sm">Baby steps</span>
-                <span class="text-xs text-gray-500">2h ago</span>
+                <span class="text-xs text-secondaryText">2h ago</span>
             </div>
             <div class="flex items-center justify-between bg-bg border border-border rounded-lg px-4 py-3">
                 <span class="text-sm">Earned Badge: Consistent Coder so tuf</span>
-                <span class="text-xs text-gray-500">1d ago</span>
+                <span class="text-xstext-secondaryText">1d ago</span>
             </div>
             <div class="flex items-center justify-between bg-bg border border-border rounded-lg px-4 py-3">
                 <span class="text-sm"> Joined a Friend's Challenge</span>
-                <span class="text-xs text-gray-500">3d ago</span>
+                <span class="text-xs text-secondaryText">3d ago</span>
             </div>
         </div>
 
         <h2 class="font-semibold mb-4">Your Badges</h2>
         <div class="flex gap-4">
-            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-purple-500 to-blue-500"></div>
-            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-pink-500 to-purple-500"></div>
-            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400"></div>
-            <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-green-400 to-blue-500"></div>
+            <div class="w-14 h-14 rounded-lg bg-badge1"></div>
+            <div class="w-14 h-14 rounded-lg bg-badge2"></div>
+            <div class="w-14 h-14 rounded-lg bg-badge3"></div>
+            <div class="w-14 h-14 rounded-lg bg-badge4"></div>
             <div class="w-14 h-14 rounded-lg border border-dashed border-gray-500 flex items-center justify-center text-gray-500 text-xs">
                 +1
             </div>
